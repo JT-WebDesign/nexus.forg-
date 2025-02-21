@@ -1,0 +1,38 @@
+html {
+    font-size: 30px;
+}
+
+body {
+    background-image: url(1111.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(2, 0, 0);
+    text-align: center;
+}
+
+/* Button styling */
+.my-button {
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #16f502;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.my-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add the bubble effect only to text-containing elements */
+h1, h2, h3, p, span {
+    display: inline-block;
+    background-color: rgba(248, 248, 250, 0.5); /* Opaque grey background */
+    padding: 5px 10px; /* Adjusts space inside the bubble */
+    border-radius: 20px; /* Makes the bubble rounded */
+    box-shadow: 5px 5px 5px 5px rgba(8, 0, 0, 0.3); /* Optional shadow for more depth */
+}

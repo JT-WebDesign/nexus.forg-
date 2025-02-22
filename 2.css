@@ -1,0 +1,111 @@
+/* Reset styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 18px; /* For readability */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Body styling */
+body {
+    color: rgb(1, 0, 0);
+    text-align: center;
+}
+
+/* Each section takes full viewport height */
+.section {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-size: cover; /* Ensures image fills the section */
+    background-position: center; /* Centers image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Background images for each section */
+.section-1 {
+    background-image: url('29.webp');
+    background-color: #000; /* Fallback color */
+}
+
+.section-2 {
+    background-image: url('292.webp');
+    background-color: #000; /* Fallback color */
+}
+
+.section-3 {
+    background-image: url('1111.webp');
+    background-color: #000; /* Fallback color */
+}
+
+/* Button styling (more touch-friendly) */
+.my-button {
+    display: inline-block;
+    font-size: 30px;
+    padding: 15px 25px;
+    background-color: #16f502;
+    color: rgb(9, 9, 9);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(2, 1, 8, 0.5);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.my-button:hover {
+    background-color: #00ff48;
+    box-shadow: 0px 0px 20px 30px rgba(252, 219, 2, 0.9);
+}
+
+/* Text Styling */
+.section h1, .section h2, .section h3, .section p {
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: block; /* Ensures elements stack vertically */
+    width: 100%; /* Full width to prevent inline positioning */
+}
+
+/* Add the bubble effect only to text-containing elements */
+h1, h2, h3, p, span {
+    display: block; /* Ensures proper block layout */
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent */
+    padding: 8px 12px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 5px rgba(2, 1, 8, 0.5);
+    text-align: center;
+    margin-bottom: 10px; /* Adds spacing between stacked elements */
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .section {
+        background-attachment: scroll; /* Prevents fixed background issues on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
